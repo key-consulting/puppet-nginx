@@ -18,7 +18,7 @@ server {
 <% end %>
 <% if @rewrite_non_www_to_www -%>
 server {
-  listen                <%= @listen_ip %>:<%= @ssl_port %>;
+  listen                <%= @listen_ip %>:<%= @listen_port %>;
   server_name           <%= @name.gsub(/^www\./, '') %>;
   rewrite               ^ https://<%= @name %>$uri permanent;
 }
