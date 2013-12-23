@@ -55,6 +55,9 @@
 #   [*rewrite_www_to_non_www*]  - Adds a server directive and rewrite rule to
 #     rewrite www.domain.com to domain.com in order to avoid duplicate
 #     content (SEO);
+#   [*rewrite_no_www_to_www*]  - Adds a server directive and rewrite rule to
+#     rewrite domain.com to www.domain.com in order to avoid duplicate
+#     content (SEO);
 #   [*try_files*]               - Specifies the locations for files to be
 #     checked as an array. Cannot be used in conjuction with $proxy.
 #   [*proxy_cache*]             - This directive sets name of zone for caching.
