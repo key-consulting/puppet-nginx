@@ -5,6 +5,7 @@
 <% if @proxy_cache -%>
     proxy_cache         <%= @proxy_cache %>;
     proxy_cache_valid   <%= @proxy_cache_valid %>;
+    proxy_cache_bypass  <%= @proxy_cache_bypass %>;
 <% end -%>
     proxy_pass          <%= @proxy %>;
     proxy_read_timeout  <%= @proxy_read_timeout %>;

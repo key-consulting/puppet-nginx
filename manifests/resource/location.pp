@@ -49,6 +49,7 @@
 #     The same zone can be used in multiple places.
 #   [*proxy_cache_valid*]     - This directive sets the time for caching
 #     different replies.
+#   [*proxy_cache_bypass*]    - This directive sets the rule to bypass caching.
 #   [*proxy_method*]         - If defined, overrides the HTTP method of the
 #     request to be passed to the backend.
 #   [*proxy_set_body*]       - If defined, sets the body passed to the backend.
@@ -117,6 +118,7 @@ define nginx::resource::location (
   $try_files            = undef,
   $proxy_cache          = false,
   $proxy_cache_valid    = false,
+  $proxy_cache_bypass   = false,
   $proxy_method         = undef,
   $proxy_set_body       = undef,
   $auth_basic           = undef,
