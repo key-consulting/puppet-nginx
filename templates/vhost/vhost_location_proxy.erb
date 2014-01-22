@@ -5,13 +5,11 @@
 <% if @proxy_cache -%>
     proxy_cache         <%= @proxy_cache %>;
     proxy_cache_valid   <%= @proxy_cache_valid %>;
-    <% if @proxy_cache_bypass -%>
+<% if @proxy_cache_bypass -%>
     proxy_cache_bypass  <%= @proxy_cache_bypass %>;
-    <% end -%>
-    <% if @proxy_no_cache -%>
+<% end -%><% if @proxy_no_cache -%>
     proxy_no_cache  <%= @proxy_no_cache %>;
-    <% end -%>
-<% end -%>
+<% end -%><% end -%>
     proxy_pass          <%= @proxy %>;
     proxy_read_timeout  <%= @proxy_read_timeout %>;
 <% if @proxy_method -%>
